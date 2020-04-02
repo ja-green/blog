@@ -1,0 +1,52 @@
+baseURL         = "http://jagreen.com/"
+uglyURLs        = false
+languageCode    = "en-us"
+title           = "Jack Green"
+theme           = "vanilla"
+enableGitInfo   = true
+enableEmoji     = true
+enableRobotsTXT = true
+
+googleAnalytics = ""
+
+[minify]
+  disableCSS    = false
+  disableHTML   = false
+  disableJS     = false
+  disableJSON   = false
+  disableSVG    = false
+  disableXML    = false
+  minifyOutput  = false
+
+[taxonomies]
+  category      = "categories"
+  tag           = "tags"
+
+[params]
+  author        = "jagreen"
+  description   = "My site global description"
+
+[menu]
+  [[menu.main]]
+    identifier  = "home"
+    name        = "home"
+    url         = "/"
+    weight      = 10
+
+  [[menu.main]]
+    identifier  = "post"
+    name        = "posts"
+    url         = "/post/"
+    weight      = 20
+
+  [[menu.main]]
+    identifier  = "about"
+    name        = "about"
+    url         = "/about/"
+    weight      = 30
+
+  [[menu.main]]
+    identifier  = "contact"
+    name        = "contact"
+    url         = "/contact/"
+    weight      = 40
