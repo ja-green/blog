@@ -1,0 +1,3 @@
+[submodule "ja-green.github.io"]
+	path = ja-green.github.io
+	url = git@github.com:ja-green/ja-green.github.io.git
