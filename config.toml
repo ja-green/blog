@@ -1,52 +1,86 @@
-baseURL         = "http://jagreen.com/"
-uglyURLs        = false
-languageCode    = "en-us"
-title           = "Jack Green"
-theme           = "vanilla"
-enableGitInfo   = true
-enableEmoji     = true
-enableRobotsTXT = true
+baseURL                       = "http://ja-green.github.io/"
+uglyURLs                      = false
+languageCode                  = "en-us"
+title                         = "Jack Green"
+theme                         = "vanilla"
+enableGitInfo                 = true
+enableEmoji                   = true
+enableRobotsTXT               = true
 
-googleAnalytics = ""
+googleAnalytics               = "UA-162923572-1"
+
+pygmentsCodeFences            = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses            = true
 
 [minify]
-  disableCSS    = false
-  disableHTML   = false
-  disableJS     = false
-  disableJSON   = false
-  disableSVG    = false
-  disableXML    = false
-  minifyOutput  = false
+  disableCSS                  = false
+  disableHTML                 = false
+  disableJS                   = false
+  disableJSON                 = false
+  disableSVG                  = false
+  disableXML                  = false
+  minifyOutput                = false
+
+[permalinks]
+  posts                       = ":section/:year/:title/"
 
 [taxonomies]
-  category      = "categories"
-  tag           = "tags"
+  category                    = "categories"
+  tag                         = "tags"
 
 [params]
-  author        = "jagreen"
-  description   = "My site global description"
+  shortdescription            = "Jack Green's personal blog"
+  description                 = """
+  I am Jack Green, a security researcher in the UK.
+  I write about information and application security, reverse engineering,
+  software development, cryptography, and self-improvement.
+  Click on the about section if you would like to know more."""
+
+  [params.author]
+    username                  = "ja-green"
+    fullname                  = "Jack Green"
+
+  [params.social.github]
+    enabled                   = true
+    icon                      = "github"
+    url                       = "http://github.com/ja-green"
+
+  [params.social.linkedin]
+    enabled                   = true
+    icon                      = "linkedin"
+    url                       = "https://uk.linkedin.com/in/ja-green"
+
+  [params.cookieconsent]
+    enabled                   = true
+    message                   = "This site uses cookies to enhance your experience"
+    acceptmessage             = "Okay"
+    infomessage               = "Learn more"
+    infolink                  = "https://www.cookieconsent.com/what-are-cookies/"
+
+  [params.favicon]
 
 [menu]
   [[menu.main]]
-    identifier  = "home"
-    name        = "home"
-    url         = "/"
-    weight      = 10
+    identifier                = "home"
+    name                      = "home"
+    url                       = "/"
+    weight                    = 10
 
   [[menu.main]]
-    identifier  = "post"
-    name        = "posts"
-    url         = "/post/"
-    weight      = 20
+    identifier                = "post"
+    name                      = "posts"
+    url                       = "/post/"
+    weight                    = 20
 
   [[menu.main]]
-    identifier  = "about"
-    name        = "about"
-    url         = "/about/"
-    weight      = 30
+    identifier                = "about"
+    name                      = "about"
+    url                       = "/about/"
+    weight                    = 30
 
   [[menu.main]]
-    identifier  = "contact"
-    name        = "contact"
-    url         = "/contact/"
-    weight      = 40
+    identifier                = "contact"
+    name                      = "contact"
+    url                       = "/contact/"
+    weight                    = 40

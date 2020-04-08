@@ -1,7 +1,8 @@
 ---
-title: "Get in touch"
+title: "Contact Me"
 ---
 
-## Some Subheading
+Feel free to get in touch if you'd like to work together or if you have
+any questions.
 
-Some content explaining who I am.
+### jack@jackgreen.co
